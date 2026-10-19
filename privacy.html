@@ -1,1 +1,149 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Приватность — XGram</title><link rel="stylesheet" href="assets/xgram.css"></head><body><header class="topbar"><a class="brand" href="index.html"><span class="mark">X</span><span>XGram</span></a><nav><a href="desktop.html">Desktop</a><a href="features.html">Возможности</a><a href="installation.html">Установка</a></nav><a class="button small" href="https://github.com/XGramDesktop/XGramDesktop/issues">Поддержка</a></header><main class="page"><p class="eyebrow">PRIVACY</p><h1>Приватность и безопасность</h1><p>Защита учётной записи начинается с устройства, на котором вы используете XGram.</p><h2>Что нельзя передавать</h2><ul><li>код подтверждения Telegram;</li><li>пароль двухэтапной проверки;</li><li>локальные данные авторизации;</li><li>файлы сессии или резервные копии, содержащие их.</li></ul><h2>Публичные репозитории</h2><p>Перед публикацией кода убедитесь, что в нём нет личных данных, токенов, ключей, папок сессии и собранных пользовательских настроек.</p><h2>Сообщить об уязвимости</h2><p>Не публикуйте чувствительные сведения в открытом issue. Опишите проблему без персональных данных и приложите только безопасные логи.</p></main><footer><span>© XGram</span><a href="index.html">Документация</a></footer></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="canonical"
+      href="https://xgramdesktop.github.io/XGramDocs/privacy.html"
+    />
+    <title>Приватность и локальные данные — XGram Desktop</title>
+    <meta
+      name="description"
+      content="Локальная история XGram, данные авторизации Telegram, резервные копии и безопасная отправка отчётов об ошибках."
+    />
+    <meta name="theme-color" content="#101722" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="XGram Desktop" />
+    <meta
+      property="og:title"
+      content="Приватность и локальные данные — XGram Desktop"
+    />
+    <meta
+      property="og:description"
+      content="Локальная история XGram, данные авторизации Telegram, резервные копии и безопасная отправка отчётов об ошибках."
+    />
+    <meta
+      property="og:url"
+      content="https://xgramdesktop.github.io/XGramDocs/privacy.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/xgram.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержанию</a>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="mark" aria-hidden="true">X</span
+        ><span>XGram <span class="brand-note">Документация</span></span></a
+      >
+      <nav aria-label="Основная навигация">
+        <a href="index.html">Главная</a><a href="desktop.html">Desktop</a
+        ><a href="features.html">Возможности</a
+        ><a href="installation.html">Установка</a
+        ><a href="privacy.html" aria-current="page">Приватность</a>
+      </nav>
+      <a
+        class="button small"
+        href="https://github.com/XGramDesktop/XGramDesktop/releases"
+        >Скачать <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main class="doc-layout" id="content" tabindex="-1">
+      <aside class="page-nav">
+        <nav aria-label="На этой странице">
+          <p>На этой странице</p>
+          <a href="#account">Авторизация Telegram</a
+          ><a href="#local-history">Локальная история сообщений</a
+          ><a href="#backups">Резервные копии</a
+          ><a href="#reports">Сообщить о проблеме</a>
+        </nav>
+      </aside>
+      <article class="prose">
+        <nav class="breadcrumbs" aria-label="Путь к странице">
+          <a href="index.html">Документация</a><span aria-hidden="true">/</span
+          ><span>Приватность</span>
+        </nav>
+        <p class="eyebrow">ПРИВАТНОСТЬ И ДАННЫЕ</p>
+        <h1>Контроль начинается с устройства.</h1>
+        <p class="lead">
+          XGram хранит часть данных локально. Учитывай это при создании
+          резервной копии, смене компьютера и отправке отчётов об ошибках.
+        </p>
+        <section aria-labelledby="account">
+          <h2 id="account">Авторизация Telegram</h2>
+          <p>
+            Никому не передавай код входа, пароль двухэтапной проверки, файлы
+            сессий и папку <code>tdata</code>. Данные авторизации могут дать
+            доступ к аккаунту.
+          </p>
+          <p>
+            Проверяй активные сеансы в разделе
+            <strong>Настройки → Устройства</strong> и загружай XGram из
+            <a href="https://github.com/XGramDesktop/XGramDesktop/releases"
+              >официальных релизов</a
+            >.
+          </p>
+        </section>
+        <section aria-labelledby="local-history">
+          <h2 id="local-history">Локальная история сообщений</h2>
+          <p>
+            Если сохранение истории включено в твоей сборке и настройках,
+            удалённые сообщения и правки могут оставаться в локальной папке
+            XGram. Эта история не становится частью облачной истории Telegram и
+            не защищена её механизмами хранения.
+          </p>
+          <p>
+            Проверь пояснения в разделе
+            <strong>XGram Preferences → XGram</strong>: возможности и
+            ограничения зависят от версии. Удаление сообщения в Telegram само по
+            себе не гарантирует очистку локальной копии XGram.
+          </p>
+        </section>
+        <section aria-labelledby="backups">
+          <h2 id="backups">Резервные копии</h2>
+          <p>
+            Закрой приложение перед копированием локальных данных. Держи
+            резервную копию в защищённом хранилище с ограниченным доступом. Не
+            добавляй её в публичные репозитории, облачные ссылки общего доступа
+            или отчёты об ошибках.
+          </p>
+        </section>
+        <section aria-labelledby="reports">
+          <h2 id="reports">Сообщить о проблеме</h2>
+          <p>
+            В
+            <a href="https://github.com/XGramDesktop/XGramDesktop/issues"
+              >Issues</a
+            >
+            опиши ожидаемое поведение, фактический результат и шаги
+            воспроизведения. Перед отправкой снимка экрана скрой имена, телефоны
+            и содержимое личных переписок.
+          </p>
+          <p>
+            Если проблема связана с уязвимостью, не публикуй коды, токены,
+            данные авторизации или сведения, позволяющие получить доступ к
+            чужому аккаунту.
+          </p>
+        </section>
+        <nav class="next-page" aria-label="Продолжить чтение">
+          <a href="installation.html"
+            >Проверить порядок установки <span aria-hidden="true">→</span></a
+          >
+        </nav>
+      </article>
+    </main>
+    <footer>
+      <a class="footer-brand" href="index.html">XGram Desktop</a>
+      <nav aria-label="Полезные ссылки">
+        <a href="https://github.com/XGramDesktop/XGramDesktop">Исходный код</a
+        ><a href="https://github.com/XGramDesktop/XGramDesktop/releases"
+          >Релизы</a
+        ><a href="https://github.com/XGramDesktop/XGramDesktop/issues"
+          >Сообщить об ошибке</a
+        ><a href="https://t.me/tomatuvorsov">Telegram</a>
+      </nav>
+    </footer>
+  </body>
+</html>

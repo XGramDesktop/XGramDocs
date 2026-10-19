@@ -1,1 +1,167 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>XGram Desktop</title><link rel="stylesheet" href="assets/xgram.css"></head><body><header class="topbar"><a class="brand" href="index.html"><span class="mark">X</span><span>XGram</span></a><nav><a href="features.html">Возможности</a><a href="installation.html">Установка</a><a href="privacy.html">Приватность</a></nav><a class="button small" href="https://github.com/XGramDesktop/XGramDesktop">GitHub</a></header><main class="page"><p class="eyebrow">DESKTOP CLIENT</p><h1>XGram Desktop</h1><p>XGram — настраиваемый настольный клиент Telegram для Windows. Основные параметры доступны из меню настроек и раздела XGram Preferences.</p><h2>Аккаунты</h2><p>Добавляйте аккаунты через стандартный интерфейс Telegram. Перед выходом из аккаунта убедитесь, что у вас сохранены способы восстановления доступа.</p><h2>Данные приложения</h2><p>Авторизации и локальный кэш находятся на вашем устройстве. Не копируйте и не публикуйте эти данные: они могут дать доступ к вашему аккаунту.</p><h2>Обратная связь</h2><p>Ошибки и идеи можно отправлять через <a href="https://github.com/XGramDesktop/XGramDesktop/issues">Issues</a>.</p></main><footer><span>© XGram</span><a href="index.html">Документация</a></footer></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="canonical"
+      href="https://xgramdesktop.github.io/XGramDocs/desktop.html"
+    />
+    <title>Интерфейс и настройки — XGram Desktop</title>
+    <meta
+      name="description"
+      content="Где найти XGram Preferences, как устроены разделы настроек и управление аккаунтами XGram Desktop."
+    />
+    <meta name="theme-color" content="#101722" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="XGram Desktop" />
+    <meta property="og:title" content="Интерфейс и настройки — XGram Desktop" />
+    <meta
+      property="og:description"
+      content="Где найти XGram Preferences, как устроены разделы настроек и управление аккаунтами XGram Desktop."
+    />
+    <meta
+      property="og:url"
+      content="https://xgramdesktop.github.io/XGramDocs/desktop.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/xgram.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержанию</a>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="mark" aria-hidden="true">X</span
+        ><span>XGram <span class="brand-note">Документация</span></span></a
+      >
+      <nav aria-label="Основная навигация">
+        <a href="index.html">Главная</a
+        ><a href="desktop.html" aria-current="page">Desktop</a
+        ><a href="features.html">Возможности</a
+        ><a href="installation.html">Установка</a
+        ><a href="privacy.html">Приватность</a>
+      </nav>
+      <a
+        class="button small"
+        href="https://github.com/XGramDesktop/XGramDesktop/releases"
+        >Скачать <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main class="doc-layout" id="content" tabindex="-1">
+      <aside class="page-nav">
+        <nav aria-label="На этой странице">
+          <p>На этой странице</p>
+          <a href="#preferences">Где найти XGram Preferences</a
+          ><a href="#sections">Разделы настроек</a
+          ><a href="#accounts">Аккаунты</a><a href="#data">Данные приложения</a>
+        </nav>
+      </aside>
+      <article class="prose">
+        <nav class="breadcrumbs" aria-label="Путь к странице">
+          <a href="index.html">Документация</a><span aria-hidden="true">/</span
+          ><span>Desktop</span>
+        </nav>
+        <p class="eyebrow">ИНТЕРФЕЙС И НАСТРОЙКИ</p>
+        <h1>XGram Desktop</h1>
+        <p class="lead">
+          Настольный клиент Telegram для Windows с отдельным центром
+          дополнительных настроек. Начни с привычного меню приложения.
+        </p>
+        <section aria-labelledby="preferences">
+          <h2 id="preferences">Где найти XGram Preferences</h2>
+          <p>
+            Открой главное меню кнопкой <strong>☰</strong> в верхнем левом
+            углу. Под именем аккаунта находится ссылка
+            <strong>XGram Preferences</strong>. Ещё один вход — одноимённый
+            пункт в стандартных настройках.
+          </p>
+          <p>
+            На главной странице Preferences доступны шесть категорий. Стрелка в
+            заголовке возвращает к предыдущему разделу; крестик закрывает окно
+            настроек.
+          </p>
+        </section>
+        <section aria-labelledby="sections">
+          <h2 id="sections">Разделы настроек</h2>
+          <dl class="settings-list">
+            <div>
+              <dt>XGram</dt>
+              <dd>
+                Режим призрака, история сообщений, виджет курса и хаб аккаунтов.
+              </dd>
+            </div>
+            <div>
+              <dt>Фильтры</dt>
+              <dd>
+                Правила фильтрации сообщений, исключения, импорт и экспорт
+                фильтров.
+              </dd>
+            </div>
+            <div>
+              <dt>Основные</dt>
+              <dd>Поведение клиента и подтверждения действий.</dd>
+            </div>
+            <div>
+              <dt>Оформление</dt>
+              <dd>
+                Иконка приложения, форма аватарок, элементы меню и интерфейса.
+              </dd>
+            </div>
+            <div>
+              <dt>Чаты</dt>
+              <dd>
+                Стикеры, реакции, отметки сообщений и элементы поля ввода.
+              </dd>
+            </div>
+            <div>
+              <dt>Другое</dt>
+              <dd>Дополнительные инструменты и сброс параметров XGram.</dd>
+            </div>
+          </dl>
+          <p>
+            В стандартных настройках также доступны поиск параметров,
+            уведомления, язык, устройства и другие разделы Telegram.
+          </p>
+        </section>
+        <section aria-labelledby="accounts">
+          <h2 id="accounts">Аккаунты</h2>
+          <p>
+            Добавляй аккаунты через стандартный интерфейс Telegram. Хаб XGram
+            помогает работать с несколькими подключёнными аккаунтами. Перед
+            отправкой сообщения или массовым действием проверь, какой аккаунт
+            выбран.
+          </p>
+          <p>
+            Перед выходом убедись, что можешь снова войти: нужен доступ к номеру
+            телефона и, если он включён, пароль двухэтапной проверки.
+          </p>
+        </section>
+        <section aria-labelledby="data">
+          <h2 id="data">Данные приложения</h2>
+          <p>
+            Авторизации, настройки и локальный кэш находятся на устройстве.
+            Подробнее об истории сообщений и резервных копиях — в разделе
+            <a href="privacy.html#local-history">«Приватность»</a>.
+          </p>
+        </section>
+        <nav class="next-page" aria-label="Продолжить чтение">
+          <a href="features.html"
+            >Изучить возможности <span aria-hidden="true">→</span></a
+          >
+        </nav>
+      </article>
+    </main>
+    <footer>
+      <a class="footer-brand" href="index.html">XGram Desktop</a>
+      <nav aria-label="Полезные ссылки">
+        <a href="https://github.com/XGramDesktop/XGramDesktop">Исходный код</a
+        ><a href="https://github.com/XGramDesktop/XGramDesktop/releases"
+          >Релизы</a
+        ><a href="https://github.com/XGramDesktop/XGramDesktop/issues"
+          >Сообщить об ошибке</a
+        ><a href="https://t.me/tomatuvorsov">Telegram</a>
+      </nav>
+    </footer>
+  </body>
+</html>

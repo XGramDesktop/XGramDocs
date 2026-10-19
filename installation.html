@@ -1,1 +1,165 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Установка — XGram</title><link rel="stylesheet" href="assets/xgram.css"></head><body><header class="topbar"><a class="brand" href="index.html"><span class="mark">X</span><span>XGram</span></a><nav><a href="desktop.html">Desktop</a><a href="features.html">Возможности</a><a href="privacy.html">Приватность</a></nav><a class="button small" href="https://github.com/XGramDesktop/XGramDesktop/releases">Скачать</a></header><main class="page"><p class="eyebrow">GETTING STARTED</p><h1>Установка XGram Desktop</h1><p>Загружайте приложение только со страницы официальных релизов XGram.</p><h2>Windows</h2><ol><li>Откройте <a href="https://github.com/XGramDesktop/XGramDesktop/releases">Releases</a>.</li><li>Скачайте актуальный файл XGram.exe из нужного релиза.</li><li>Запустите файл и завершите вход в Telegram в самом приложении.</li></ol><div class="notice">Не передавайте коды входа, пароль двухэтапной проверки и папку данных третьим лицам.</div><h2>Обновления</h2><p>Перед заменой приложения полностью закройте XGram. Не удаляйте локальную папку данных, если хотите сохранить авторизации.</p></main><footer><span>© XGram</span><a href="index.html">Документация</a></footer></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="canonical"
+      href="https://xgramdesktop.github.io/XGramDocs/installation.html"
+    />
+    <title>Установка для Windows — XGram Desktop</title>
+    <meta
+      name="description"
+      content="Как скачать официальную сборку XGram Desktop для Windows x64, войти в аккаунт и обновить приложение."
+    />
+    <meta name="theme-color" content="#101722" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="XGram Desktop" />
+    <meta property="og:title" content="Установка для Windows — XGram Desktop" />
+    <meta
+      property="og:description"
+      content="Как скачать официальную сборку XGram Desktop для Windows x64, войти в аккаунт и обновить приложение."
+    />
+    <meta
+      property="og:url"
+      content="https://xgramdesktop.github.io/XGramDocs/installation.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/xgram.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержанию</a>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="mark" aria-hidden="true">X</span
+        ><span>XGram <span class="brand-note">Документация</span></span></a
+      >
+      <nav aria-label="Основная навигация">
+        <a href="index.html">Главная</a><a href="desktop.html">Desktop</a
+        ><a href="features.html">Возможности</a
+        ><a href="installation.html" aria-current="page">Установка</a
+        ><a href="privacy.html">Приватность</a>
+      </nav>
+      <a
+        class="button small"
+        href="https://github.com/XGramDesktop/XGramDesktop/releases"
+        >Скачать <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main class="doc-layout" id="content" tabindex="-1">
+      <aside class="page-nav">
+        <nav aria-label="На этой странице">
+          <p>На этой странице</p>
+          <a href="#windows">Скачать и запустить</a
+          ><a href="#updates">Обновления</a
+          ><a href="#other-platforms">Другие платформы и сборка из исходников</a
+          ><a href="#help">Если приложение не запускается</a>
+        </nav>
+      </aside>
+      <article class="prose">
+        <nav class="breadcrumbs" aria-label="Путь к странице">
+          <a href="index.html">Документация</a><span aria-hidden="true">/</span
+          ><span>Установка</span>
+        </nav>
+        <p class="eyebrow">ПЕРВЫЕ ШАГИ</p>
+        <h1>Установка XGram Desktop</h1>
+        <p class="lead">
+          Готовые сборки для Windows x64 публикуются в официальном репозитории
+          XGramDesktop.
+        </p>
+        <section aria-labelledby="windows">
+          <h2 id="windows">Скачать и запустить</h2>
+          <ol class="steps">
+            <li>
+              Открой
+              <a href="https://github.com/XGramDesktop/XGramDesktop/releases"
+                >официальные релизы XGram Desktop</a
+              >.
+            </li>
+            <li>
+              Выбери релиз и скачай файл для <strong>Windows x64</strong> из
+              блока <strong>Assets</strong>. Например, в релизе v1 он называется
+              <code>XGram-v1-Windows-x64.exe</code>. Архивы
+              <code>Source code</code> содержат исходники.
+            </li>
+            <li>
+              Помести приложение в отдельную папку и запусти скачанный файл.
+            </li>
+            <li>
+              Войди через интерфейс Telegram в самом приложении. После входа
+              открой <a href="desktop.html#preferences">XGram Preferences</a>.
+            </li>
+          </ol>
+          <div class="actions">
+            <a
+              class="button"
+              href="https://github.com/XGramDesktop/XGramDesktop/releases"
+              >Открыть релизы <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </section>
+        <section aria-labelledby="updates">
+          <h2 id="updates">Обновления</h2>
+          <p>
+            Перед обновлением полностью закрой XGram, включая значок в области
+            уведомлений Windows. Сделай резервную копию локальной папки данных,
+            затем замени исполняемый файл новой сборкой.
+          </p>
+          <p>
+            Не удаляй локальные данные, если хочешь сохранить авторизации. Храни
+            резервные копии в защищённом месте; подробнее —
+            <a href="privacy.html#backups">в руководстве по данным</a>.
+          </p>
+        </section>
+        <section aria-labelledby="other-platforms">
+          <h2 id="other-platforms">Другие платформы и сборка из исходников</h2>
+          <p>
+            Здесь описана установка готовой Windows-сборки. Инструкции для
+            разработчиков находятся в репозитории:
+            <a
+              href="https://github.com/XGramDesktop/XGramDesktop/blob/main/docs/building-win-x64.md"
+              >Windows</a
+            >,
+            <a
+              href="https://github.com/XGramDesktop/XGramDesktop/blob/main/docs/building-linux.md"
+              >Linux</a
+            >,
+            <a
+              href="https://github.com/XGramDesktop/XGramDesktop/blob/main/docs/building-mac.md"
+              >macOS</a
+            >. Наличие инструкции не означает, что для платформы опубликован
+            готовый релиз.
+          </p>
+        </section>
+        <section aria-labelledby="help">
+          <h2 id="help">Если приложение не запускается</h2>
+          <p>
+            Проверь, что скачан исполняемый файл для Windows x64. В
+            <a href="https://github.com/XGramDesktop/XGramDesktop/issues"
+              >отчёте об ошибке</a
+            >
+            укажи версию Windows, версию XGram и шаги до появления проблемы. Не
+            прикладывай папку <code>tdata</code> или файлы авторизации.
+          </p>
+        </section>
+        <nav class="next-page" aria-label="Продолжить чтение">
+          <a href="desktop.html"
+            >Перейти к настройкам <span aria-hidden="true">→</span></a
+          >
+        </nav>
+      </article>
+    </main>
+    <footer>
+      <a class="footer-brand" href="index.html">XGram Desktop</a>
+      <nav aria-label="Полезные ссылки">
+        <a href="https://github.com/XGramDesktop/XGramDesktop">Исходный код</a
+        ><a href="https://github.com/XGramDesktop/XGramDesktop/releases"
+          >Релизы</a
+        ><a href="https://github.com/XGramDesktop/XGramDesktop/issues"
+          >Сообщить об ошибке</a
+        ><a href="https://t.me/tomatuvorsov">Telegram</a>
+      </nav>
+    </footer>
+  </body>
+</html>
